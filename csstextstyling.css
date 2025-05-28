@@ -1,0 +1,50 @@
+body {
+  background-color: lightgrey;
+  font-family: Arial, sans-serif;
+
+  background-image: url("Backgrounds/starBackground.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#carouselExample {
+  max-width: 600px; /* or any desired width */
+  margin: auto;
+}
+
+.card {
+  margin: 2rem auto;
+}
+
+#beschreibung h4 {
+    font-size: 1.2em;
+    color: black;
+    padding-left: 20px;
+}
+
+#beschreibung a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: black !important;
+  border-color: black !important;
+  color: white !important;
+}
+
+/* Carousel button icon background styling */
+#carouselExampleCaptions .carousel-control-prev-icon,
+#carouselExampleCaptions .carousel-control-next-icon {
+  background-color: black;
+  border-radius: 20%;
+}

@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>generateTexture Class Overview</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Class: <code>generateTexture</code></h1>
+    <p>This class provides methods to generate <code>Texture</code> and <code>Pixmap</code> objects using a grid system and a list of <code>Color</code> objects. It is used to create pixel-based graphical assets for the game.</p>
+
+    <h2>Method: <code>genTexture()</code></h2>
+    <p>Generates a LibGDX <code>Texture</code> from a 2D grid of colors.</p>
+    <ul>
+      <li>Parameters:
+        <ul>
+          <li><code>gridSizeX, gridSizeY</code>: Dimensions of the grid</li>
+          <li><code>pixelSize</code>: Size of each pixel block</li>
+          <li><code>arrayList</code>: List of colors used for each pixel</li>
+        </ul>
+      </li>
+      <li>Returns: A <code>Texture</code> object created from the colored pixel grid.</li>
+      <li>Automatically disposes of the Pixmap after creating the Texture.</li>
+    </ul>
+
+    <h2>Method: <code>genPixmap()</code></h2>
+    <p>Similar to <code>genTexture()</code>, but returns the raw <code>Pixmap</code> instead of creating a Texture.</p>
+    <ul>
+      <li>Useful when further processing or saving the Pixmap is needed.</li>
+      <li>The caller is responsible for disposing of the returned Pixmap.</li>
+    </ul>
+
+    <h2>Code Excerpt</h2>
+    <pre>
+public Texture genTexture(int gridSizeX, int gridSizeY, int pixelSize, ArrayList&lt;Color&gt; arrayList) {
+    ...
+}
+
+public Pixmap genPixmap(int gridSizeX, int gridSizeY, int pixelSize, ArrayList&lt;Color&gt; arrayList) {
+    ...
+}
+    </pre>
+  </div>
+</body>
+
+<footer>
+    <a href="startSeite.html" class="btn btn-secondary" target="_blank">Go Back</a>
+</footer>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Method Documentation: loadAssets()</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Method: <code>loadAssets()</code></h1>
+    <p>This method generates and saves graphical assets for the game if the <code>genEverytimeFlag</code> is set to <code>true</code>. These assets are written as PNG files into the local <code>cache</code> directory.</p>
+    
+    <h2>Assets Created</h2>
+    <ul>
+      <li><code>background1.png</code> – dense star background</li>
+      <li><code>background2.png</code> – medium star background</li>
+      <li><code>background3.png</code> – sparse star background</li>
+      <li><code>starBackground.png</code> – special starfield texture</li>
+      <li><code>alphaBG.png</code> – semi-transparent black overlay</li>
+      <li><code>attackGrid.png</code> – glowing red grid texture</li>
+      <li><code>attackGridREACT.png</code> – reactive variant of the grid</li>
+      <li><code>attackRing.png</code> – glowing red ring texture</li>
+    </ul>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>Uses helper classes <code>bgGenerator</code> and <code>generateGlowTextures</code></li>
+      <li>Randomized values for varied star patterns</li>
+      <li>All created Pixmaps are disposed after writing to save memory</li>
+    </ul>
+
+    <h2>Code Excerpt</h2>
+    <pre>
+public void loadAssets() {
+    if (genEverytimeFlag) {
+        // create Pixmap assets and write them to PNG files
+        ...
+    }
+}
+    </pre>
+  </div>
+</body>
+
+<footer>
+    <a href="startSeite.html" class="btn btn-secondary" target="_blank">Go Back</a>
+</footer>
+</html>
