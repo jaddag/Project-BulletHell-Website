@@ -10,3 +10,14 @@ function updateBackgroundHeight() {
 window.addEventListener('load', updateBackgroundHeight);
 window.addEventListener('resize', updateBackgroundHeight);
 window.addEventListener('scroll', updateBackgroundHeight);
+
+window.addEventListener('DOMContentLoaded', () => {
+  const scroller = document.querySelector('.scroll-inner');
+  if (scroller) {
+    const cards = Array.from(scroller.children);
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      scroller.appendChild(clone);
+    });
+  }
+});
