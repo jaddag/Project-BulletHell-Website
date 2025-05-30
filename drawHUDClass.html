@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übersicht der Klasse drawHUD</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Klasse: <code>drawHUD</code></h1>
+    <p>Die <code>drawHUD</code>-Klasse ist für das Zeichnen des Heads-Up-Displays (HUD) im Spiel zuständig. Sie zeigt Gesundheitsbalken, Joysticks, Debug-Informationen und verarbeitet Nutzereingaben für die Steuerung.</p>
+
+    <h2>Wichtige Bestandteile</h2>
+    <ul>
+      <li><code>js1 / js2</code> – Zwei virtuelle Joysticks für Steuerung.</li>
+      <li><code>draw()</code> – Zeichnet das HUD inkl. Text, Balken und Joysticks.</li>
+      <li><code>makeHpBars()</code>, <code>hpBarPlayer()</code>, <code>hpBarBoss()</code> – Erzeugen und rendern die Lebensbalken.</li>
+      <li><code>updateMultiTouch()</code> – Erfasst Mehrfingereingaben zur Joysticksteuerung.</li>
+      <li><code>devText()</code> – Zeigt Debug-Infos wie FPS und Position an.</li>
+      <li><code>getHudViewport()</code> – Gibt das Viewport-Objekt für das HUD zurück.</li>
+    </ul>
+
+    <h2>Codeausschnitt</h2>
+    <pre>
+public class drawHUD {
+    public void draw(Vector2 touchPos) { ... }
+    private void devText() { ... }
+    private void updateMultiTouch() { ... }
+    public void hpBarPlayer() { ... }
+    public void hpBarBoss() { ... }
+    public void setShipSpeed(float speed) { ... }
+}
+    </pre>
+  </div>
+</body>
+
+<footer style="text-align: center; margin-top: 20px;">
+  <a onclick="history.back(); return false;" style="display: inline-block; padding: 12px 24px; font-size: 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; transition: background-color 0.3s;">
+    ⬅ Zurück zur Startseite
+  </a>
+</footer>
+</html>

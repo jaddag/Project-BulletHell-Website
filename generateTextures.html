@@ -1,10 +1,8 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>generateTexture Class Overview</title>
+  <title>Übersicht der Klasse generateTexture</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
     .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -14,31 +12,31 @@
 </head>
 <body>
   <div class="container">
-    <h1>Class: <code>generateTexture</code></h1>
-    <p>This class provides methods to generate <code>Texture</code> and <code>Pixmap</code> objects using a grid system and a list of <code>Color</code> objects. It is used to create pixel-based graphical assets for the game.</p>
+    <h1>Klasse: <code>generateTexture</code></h1>
+    <p>Diese Klasse stellt Methoden zur Verfügung, um <code>Texture</code>- und <code>Pixmap</code>-Objekte mithilfe eines Rasters und einer Liste von <code>Color</code>-Objekten zu erzeugen. Sie wird verwendet, um pixelbasierte Grafiken für das Spiel zu erstellen.</p>
 
-    <h2>Method: <code>genTexture()</code></h2>
-    <p>Generates a LibGDX <code>Texture</code> from a 2D grid of colors.</p>
+    <h2>Methode: <code>genTexture()</code></h2>
+    <p>Erzeugt eine LibGDX-<code>Texture</code> aus einem 2D-Farb-Raster.</p>
     <ul>
-      <li>Parameters:
+      <li>Parameter:
         <ul>
-          <li><code>gridSizeX, gridSizeY</code>: Dimensions of the grid</li>
-          <li><code>pixelSize</code>: Size of each pixel block</li>
-          <li><code>arrayList</code>: List of colors used for each pixel</li>
+          <li><code>gridSizeX, gridSizeY</code>: Maße des Rasters</li>
+          <li><code>pixelSize</code>: Größe jedes Pixelblocks</li>
+          <li><code>arrayList</code>: Liste der Farben für jedes Pixel</li>
         </ul>
       </li>
-      <li>Returns: A <code>Texture</code> object created from the colored pixel grid.</li>
-      <li>Automatically disposes of the Pixmap after creating the Texture.</li>
+      <li>Rückgabewert: Ein <code>Texture</code>-Objekt, das aus dem Farbraster erzeugt wurde.</li>
+      <li>Die Pixmap wird nach dem Erzeugen der Texture automatisch freigegeben.</li>
     </ul>
 
-    <h2>Method: <code>genPixmap()</code></h2>
-    <p>Similar to <code>genTexture()</code>, but returns the raw <code>Pixmap</code> instead of creating a Texture.</p>
+    <h2>Methode: <code>genPixmap()</code></h2>
+    <p>Ähnlich wie <code>genTexture()</code>, gibt aber das Rohobjekt <code>Pixmap</code> zurück anstatt eine Texture zu erstellen.</p>
     <ul>
-      <li>Useful when further processing or saving the Pixmap is needed.</li>
-      <li>The caller is responsible for disposing of the returned Pixmap.</li>
+      <li>Nützlich, wenn die Pixmap weiterverarbeitet oder gespeichert werden soll.</li>
+      <li>Der Aufrufer ist für das Freigeben der Pixmap verantwortlich.</li>
     </ul>
 
-    <h2>Code Excerpt</h2>
+    <h2>Codeausschnitt</h2>
     <pre>
 public Texture genTexture(int gridSizeX, int gridSizeY, int pixelSize, ArrayList&lt;Color&gt; arrayList) {
     ...
@@ -51,7 +49,9 @@ public Pixmap genPixmap(int gridSizeX, int gridSizeY, int pixelSize, ArrayList&l
   </div>
 </body>
 
-<footer>
-    <a href="startSeite.html" class="btn btn-secondary" target="_blank">Go Back</a>
+<footer style="text-align: center; margin-top: 20px;">
+  <a onclick="history.back(); return false;" style="display: inline-block; padding: 12px 24px; font-size: 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; transition: background-color 0.3s;">
+    ⬅ Zurück zur Startseite
+  </a>
 </footer>
 </html>

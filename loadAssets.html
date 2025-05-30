@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Method Documentation: loadAssets()</title>
+  <title>Methodendokumentation: loadAssets()</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
     .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -12,33 +12,33 @@
 </head>
 <body>
   <div class="container">
-    <h1>Method: <code>loadAssets()</code></h1>
-    <p>This method generates and saves graphical assets for the game if the <code>genEverytimeFlag</code> is set to <code>true</code>. These assets are written as PNG files into the local <code>cache</code> directory.</p>
+    <h1>Methode: <code>loadAssets()</code></h1>
+    <p>Diese Methode erstellt und speichert grafische Assets für das Spiel, wenn das Flag <code>genEverytimeFlag</code> auf <code>true</code> gesetzt ist. Die Assets werden als PNG-Dateien im lokalen <code>cache</code>-Verzeichnis abgelegt.</p>
     
-    <h2>Assets Created</h2>
+    <h2>Erstellte Assets</h2>
     <ul>
-      <li><code>background1.png</code> – dense star background</li>
-      <li><code>background2.png</code> – medium star background</li>
-      <li><code>background3.png</code> – sparse star background</li>
-      <li><code>starBackground.png</code> – special starfield texture</li>
-      <li><code>alphaBG.png</code> – semi-transparent black overlay</li>
-      <li><code>attackGrid.png</code> – glowing red grid texture</li>
-      <li><code>attackGridREACT.png</code> – reactive variant of the grid</li>
-      <li><code>attackRing.png</code> – glowing red ring texture</li>
+      <li><code>background1.png</code> – dichter Sternenhintergrund</li>
+      <li><code>background2.png</code> – mitteldichter Sternenhintergrund</li>
+      <li><code>background3.png</code> – spärlicher Sternenhintergrund</li>
+      <li><code>starBackground.png</code> – spezielle Sternfeldtextur</li>
+      <li><code>alphaBG.png</code> – halbtransparenter schwarzer Overlay</li>
+      <li><code>attackGrid.png</code> – leuchtende rote Gittertextur</li>
+      <li><code>attackGridREACT.png</code> – reaktive Variante des Gitters</li>
+      <li><code>attackRing.png</code> – leuchtende rote Ringtextur</li>
     </ul>
 
-    <h2>Notes</h2>
+    <h2>Hinweise</h2>
     <ul>
-      <li>Uses helper classes <code>bgGenerator</code> and <code>generateGlowTextures</code></li>
-      <li>Randomized values for varied star patterns</li>
-      <li>All created Pixmaps are disposed after writing to save memory</li>
+      <li>Verwendet die Hilfsklassen <code>bgGenerator</code> und <code>generateGlowTextures</code></li>
+      <li>Verwendet Zufallswerte für abwechslungsreiche Sternenmuster</li>
+      <li>Alle erstellten Pixmaps werden nach dem Speichern freigegeben, um Speicher zu sparen</li>
     </ul>
 
-    <h2>Code Excerpt</h2>
+    <h2>Codeausschnitt</h2>
     <pre>
 public void loadAssets() {
     if (genEverytimeFlag) {
-        // create Pixmap assets and write them to PNG files
+        // Pixmap-Assets erstellen und als PNG-Dateien speichern
         ...
     }
 }
@@ -46,7 +46,9 @@ public void loadAssets() {
   </div>
 </body>
 
-<footer>
-    <a href="startSeite.html" class="btn btn-secondary" target="_blank">Go Back</a>
+<footer style="text-align: center; margin-top: 20px;">
+  <a onclick="history.back(); return false;" style="display: inline-block; padding: 12px 24px; font-size: 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; transition: background-color 0.3s;">
+    ⬅ Zurück zur Startseite
+  </a>
 </footer>
 </html>

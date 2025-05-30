@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Übersicht der Klasse Player</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #333; }
+    pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Klasse: <code>Player</code></h1>
+    <p>Die <code>Player</code>-Klasse repräsentiert den spielergesteuerten Charakter im Spiel. Sie steuert die Bewegung, das Schießen sowie die Lebenspunkte und Zustände des Spielers.</p>
+
+    <h2>Wichtige Methoden</h2>
+    <ul>
+      <li><code>shoot()</code> – Erzeugt ein neues Projektil, das aus der aktuellen Spielerposition abgefeuert wird.</li>
+      <li><code>projectileOutsideBorder()</code> – Prüft, ob ein Projektil außerhalb des Kamerarands liegt.</li>
+      <li><code>updateShot()</code> – Aktualisiert die Position und den Zustand der abgefeuerten Projektile.</li>
+      <li><code>getBounds()</code> – Gibt die Kollisionsgrenzen des Spielers zurück.</li>
+      <li><code>update()</code> – Aktualisiert die Position, Bewegung und Eingaben des Spielers pro Frame.</li>
+    </ul>
+
+    <h2>Codeausschnitt</h2>
+    <pre>
+public class Player {
+    public void shoot() { ... }
+    public boolean projectileOutsideBorder(...) { ... }
+    public void updateShot(...) { ... }
+    public Rectangle getBounds() { ... }
+    public void update() { ... }
+}
+    </pre>
+  </div>
+</body>
+
+<footer style="text-align: center; margin-top: 20px;">
+  <a onclick="history.back(); return false;" style="display: inline-block; padding: 12px 24px; font-size: 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; transition: background-color 0.3s;">
+    ⬅ Zurück zur Startseite
+  </a>
+</footer>
+</html>
